@@ -1,5 +1,5 @@
 import { test, expect } from "vitest";
-import { caesarCipher } from "./caesarCipher";
+import { caesarCipher } from "../src/caesarCipher";
 
 test("caesarCipher", () => {
   expect(caesarCipher("xyz", 3)).toBe("abc");

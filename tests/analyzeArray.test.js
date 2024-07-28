@@ -1,5 +1,5 @@
 import { test, expect } from "vitest";
-import { analyzeArray } from "./analyzeArray";
+import { analyzeArray } from "../src/analyzeArray";
 
 test("analyzeArray", () => {
   expect(analyzeArray([1, 8, 3, 4, 2, 6])).toEqual({

@@ -1,5 +1,5 @@
 import { test, expect } from "vitest";
-import { calculator } from "./calculator";
+import { calculator } from "../src/calculator";
 
 test("calculator", () => {
   expect(calculator.add(1, 2)).toBe(3);

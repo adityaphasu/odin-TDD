@@ -1,5 +1,5 @@
 import { test, expect } from "vitest";
-import { reverseString } from "./reverseString";
+import { reverseString } from "../src/reverseString";
 
 test("reverseString", () => {
   expect(reverseString("hello")).toBe("olleh");
