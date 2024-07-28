@@ -1,18 +1,19 @@
-import { test, expect } from "vitest";
+import { expect, describe, it } from "vitest";
 import { reverseString } from "../src/reverseString";
 
-test("reverseString", () => {
-  expect(reverseString("hello")).toBe("olleh");
-});
+describe("reverseString", () => {
+  it("should reverse various strings", () => {
+    expect(reverseString("hello")).toBe("olleh");
+    expect(reverseString("world")).toBe("dlrow");
+    expect(reverseString("emerald")).toBe("dlareme");
+  });
 
-test("reverseString", () => {
-  expect(reverseString("world")).toBe("dlrow");
-});
+  it("should reverse empty string", () => {
+    expect(reverseString("")).toBe("");
+  });
 
-test("reverseString", () => {
-  expect(reverseString("emerald")).toBe("dlareme");
-});
-
-test("reverseString", () => {
-  expect(reverseString("Today is a good day")).toBe("yad doog a si yadoT");
+  it("should reverse string with spaces", () => {
+    expect(reverseString("hello world")).toBe("dlrow olleh");
+    expect(reverseString("Today is a good day")).toBe("yad doog a si yadoT");
+  });
 });
